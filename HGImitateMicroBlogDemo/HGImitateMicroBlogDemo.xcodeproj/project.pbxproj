@@ -22,13 +22,16 @@
 		1806AE531D1B8D3900B264B4 /* icon_xitangxiaoxi-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1806AE521D1B8D3800B264B4 /* icon_xitangxiaoxi-1.png */; };
 		182E6BE31D1E82470028C4E6 /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 182E6BE21D1E82460028C4E6 /* DazFlake.png */; };
 		182E6BE51D1E83B10028C4E6 /* DazStarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */; };
+		189BC9CF1D21193C0031E3B0 /* HGCollectionViewAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189BC9CE1D21193C0031E3B0 /* HGCollectionViewAnimationCell.m */; };
+		189BC9D11D2119620031E3B0 /* HGCollectionViewAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189BC9D01D2119620031E3B0 /* HGCollectionViewAnimationCell.xib */; };
 		189E57A81D210C0200FAF224 /* CAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E579B1D210C0200FAF224 /* CAEmitterLayerViewController.m */; };
 		189E57A91D210C0200FAF224 /* HGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E579D1D210C0200FAF224 /* HGSearchViewController.m */; };
 		189E57AA1D210C0200FAF224 /* TableViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E579F1D210C0200FAF224 /* TableViewAnimationViewController.m */; };
-		189E57AB1D210C0200FAF224 /* TopSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57A11D210C0200FAF224 /* TopSlideView.m */; };
 		189E57AC1D210C0200FAF224 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57A31D210C0200FAF224 /* ViewController.m */; };
 		189E57AD1D210C0200FAF224 /* AnimationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57A61D210C0200FAF224 /* AnimationTableViewCell.m */; };
 		189E57AE1D210C0200FAF224 /* AnimationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189E57A71D210C0200FAF224 /* AnimationTableViewCell.xib */; };
+		189E57B11D210CF600FAF224 /* TopSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57B01D210CF600FAF224 /* TopSlideView.m */; };
+		189E57B41D210D3A00FAF224 /* HGCollectionViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57B31D210D3A00FAF224 /* HGCollectionViewAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		1806AE521D1B8D3800B264B4 /* icon_xitangxiaoxi-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_xitangxiaoxi-1.png"; sourceTree = "<group>"; };
 		182E6BE21D1E82460028C4E6 /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
 		182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DazStarIcon@2x.png"; sourceTree = "<group>"; };
+		189BC9CD1D21193C0031E3B0 /* HGCollectionViewAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCollectionViewAnimationCell.h; sourceTree = "<group>"; };
+		189BC9CE1D21193C0031E3B0 /* HGCollectionViewAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCollectionViewAnimationCell.m; sourceTree = "<group>"; };
+		189BC9D01D2119620031E3B0 /* HGCollectionViewAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HGCollectionViewAnimationCell.xib; sourceTree = "<group>"; };
 		189E57981D21097A00FAF224 /* HGCostom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCostom.h; sourceTree = "<group>"; };
 		189E579A1D210C0200FAF224 /* CAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerViewController.h; sourceTree = "<group>"; };
 		189E579B1D210C0200FAF224 /* CAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerViewController.m; sourceTree = "<group>"; };
@@ -80,13 +86,15 @@
 		189E579D1D210C0200FAF224 /* HGSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSearchViewController.m; sourceTree = "<group>"; };
 		189E579E1D210C0200FAF224 /* TableViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationViewController.h; sourceTree = "<group>"; };
 		189E579F1D210C0200FAF224 /* TableViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationViewController.m; sourceTree = "<group>"; };
-		189E57A01D210C0200FAF224 /* TopSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSlideView.h; sourceTree = "<group>"; };
-		189E57A11D210C0200FAF224 /* TopSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSlideView.m; sourceTree = "<group>"; };
 		189E57A21D210C0200FAF224 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		189E57A31D210C0200FAF224 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		189E57A51D210C0200FAF224 /* AnimationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTableViewCell.h; sourceTree = "<group>"; };
 		189E57A61D210C0200FAF224 /* AnimationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTableViewCell.m; sourceTree = "<group>"; };
 		189E57A71D210C0200FAF224 /* AnimationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationTableViewCell.xib; sourceTree = "<group>"; };
+		189E57AF1D210CF600FAF224 /* TopSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSlideView.h; sourceTree = "<group>"; };
+		189E57B01D210CF600FAF224 /* TopSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSlideView.m; sourceTree = "<group>"; };
+		189E57B21D210D3A00FAF224 /* HGCollectionViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCollectionViewAnimationController.h; sourceTree = "<group>"; };
+		189E57B31D210D3A00FAF224 /* HGCollectionViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCollectionViewAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +204,10 @@
 				189E579D1D210C0200FAF224 /* HGSearchViewController.m */,
 				189E579E1D210C0200FAF224 /* TableViewAnimationViewController.h */,
 				189E579F1D210C0200FAF224 /* TableViewAnimationViewController.m */,
-				189E57A01D210C0200FAF224 /* TopSlideView.h */,
-				189E57A11D210C0200FAF224 /* TopSlideView.m */,
 				189E57A21D210C0200FAF224 /* ViewController.h */,
 				189E57A31D210C0200FAF224 /* ViewController.m */,
+				189E57B21D210D3A00FAF224 /* HGCollectionViewAnimationController.h */,
+				189E57B31D210D3A00FAF224 /* HGCollectionViewAnimationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,9 +215,14 @@
 		189E57A41D210C0200FAF224 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				189E57AF1D210CF600FAF224 /* TopSlideView.h */,
+				189E57B01D210CF600FAF224 /* TopSlideView.m */,
 				189E57A51D210C0200FAF224 /* AnimationTableViewCell.h */,
 				189E57A61D210C0200FAF224 /* AnimationTableViewCell.m */,
 				189E57A71D210C0200FAF224 /* AnimationTableViewCell.xib */,
+				189BC9CD1D21193C0031E3B0 /* HGCollectionViewAnimationCell.h */,
+				189BC9CE1D21193C0031E3B0 /* HGCollectionViewAnimationCell.m */,
+				189BC9D01D2119620031E3B0 /* HGCollectionViewAnimationCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +332,7 @@
 			files = (
 				1806AE4F1D1B8C4A00B264B4 /* icon_cuciao-1.png in Resources */,
 				1806AE4D1D1B7DDF00B264B4 /* 12.png in Resources */,
+				189BC9D11D2119620031E3B0 /* HGCollectionViewAnimationCell.xib in Resources */,
 				1806AE511D1B8CCE00B264B4 /* icon_daohuotongzhi-1.png in Resources */,
 				182E6BE51D1E83B10028C4E6 /* DazStarIcon@2x.png in Resources */,
 				189E57AE1D210C0200FAF224 /* AnimationTableViewCell.xib in Resources */,
@@ -352,12 +366,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				189E57AC1D210C0200FAF224 /* ViewController.m in Sources */,
-				189E57AB1D210C0200FAF224 /* TopSlideView.m in Sources */,
 				189E57AD1D210C0200FAF224 /* AnimationTableViewCell.m in Sources */,
+				189E57B41D210D3A00FAF224 /* HGCollectionViewAnimationController.m in Sources */,
 				1806AE481D1A8B7F00B264B4 /* UIView+Frame.m in Sources */,
 				189E57A91D210C0200FAF224 /* HGSearchViewController.m in Sources */,
 				1806AE471D1A8B7F00B264B4 /* UIView+Animation.m in Sources */,
 				189E57A81D210C0200FAF224 /* CAEmitterLayerViewController.m in Sources */,
+				189E57B11D210CF600FAF224 /* TopSlideView.m in Sources */,
+				189BC9CF1D21193C0031E3B0 /* HGCollectionViewAnimationCell.m in Sources */,
 				1806AE121D1A7C6100B264B4 /* AppDelegate.m in Sources */,
 				189E57AA1D210C0200FAF224 /* TableViewAnimationViewController.m in Sources */,
 				1806AE0F1D1A7C6100B264B4 /* main.m in Sources */,

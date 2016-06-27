@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TopSlideView.h"
 #import "HGCostom.h"
+#import "HGCollectionViewAnimationController.h"
 
 @interface ViewController ()<TopSlideViewDelegate>
 
@@ -23,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.imageView];
+    UITapGestureRecognizer * tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTappedTap)];
+    self.imageView.userInteractionEnabled =YES;
+    [self.imageView addGestureRecognizer:tap];
 //
 //    if (self.tabBarController.selectedIndex==0) {
 //        UIWindow * window =[UIApplication sharedApplication].keyWindow;
@@ -31,6 +35,12 @@
 //    }
 }
 
+-(void)didTappedTap{
+
+    HGCollectionViewAnimationController * collectionViewAnimationController =[[HGCollectionViewAnimationController alloc]init];
+    collectionViewAnimationController.title =@"collection";
+    [self.navigationController pushViewController:collectionViewAnimationController animated:YES];
+}
 
 #pragma mark -
 -(void)closeViewAnimation{

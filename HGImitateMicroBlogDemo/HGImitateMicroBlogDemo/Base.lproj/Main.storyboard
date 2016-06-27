@@ -148,7 +148,7 @@
         <!--UIcollectionView-->
         <scene sceneID="Qmy-R8-UnF">
             <objects>
-                <viewController id="asD-hv-taT" sceneMemberID="viewController">
+                <viewController id="asD-hv-taT" customClass="HGCollectionViewAnimationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZP3-jI-ayE"/>
                         <viewControllerLayoutGuide type="bottom" id="Yzj-F0-EMY"/>
