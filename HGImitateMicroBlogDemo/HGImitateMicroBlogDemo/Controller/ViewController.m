@@ -8,9 +8,7 @@
 
 #import "ViewController.h"
 #import "TopSlideView.h"
-
-#define UIScreeWidth [[UIScreen mainScreen]bounds].size.width
-#define UIScreeHeight [[UIScreen mainScreen]bounds].size.height
+#import "HGCostom.h"
 
 @interface ViewController ()<TopSlideViewDelegate>
 

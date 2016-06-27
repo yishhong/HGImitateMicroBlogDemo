@@ -14,7 +14,6 @@
 #define UIScreeWidth [[UIScreen mainScreen]bounds].size.width
 #define UIScreeHeight [[UIScreen mainScreen]bounds].size.height
 
-
 @interface TopSlideView ()
 
 @property(strong,nonatomic)UIButton * closeButton;
@@ -24,8 +23,6 @@
 @property(strong,nonatomic)UIView * bottomView;
 
 @property(strong,nonatomic)UIButton * animationButton;
-
-@property(strong,nonatomic)UICollectionView * collectionView;
 
 @end
 
@@ -42,7 +39,6 @@
 }
 
 -(void)Setup{
-    
     [self addSubview:self.groundView];
     [self.groundView addSubview:self.bottomView];
     [self.bottomView addSubview:self.closeButton];

@@ -6,12 +6,11 @@
 //  Copyright © 2016年 湖南同禾. All rights reserved.
 //
 
-#define dtScreenHeight  [[UIScreen mainScreen]bounds].size.height
-#define dtScreenWidth  [[UIScreen mainScreen]bounds].size.width
-
 #import "HGSearchViewController.h"
 #import "UIView+Frame.h"
 #import "TableViewAnimationViewController.h"
+#import "HGCostom.h"
+
 
 @interface HGSearchViewController ()
 
