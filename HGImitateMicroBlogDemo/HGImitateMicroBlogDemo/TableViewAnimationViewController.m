@@ -8,6 +8,7 @@
 
 #import "TableViewAnimationViewController.h"
 #import "AnimationTableViewCell.h"
+#import "CAEmitterLayerViewController.h"
 
 @interface TableViewAnimationViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -48,6 +49,13 @@
     basicAnimation.toValue =[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 0)];
     basicAnimation.timingFunction =[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     [animationCell.layer addAnimation:basicAnimation forKey:@"animation"];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    CAEmitterLayerViewController *emitterLayerViewController =[[CAEmitterLayerViewController alloc]init];
+    emitterLayerViewController.title=@"emitterLayer";
+    [self.navigationController pushViewController:emitterLayerViewController animated:YES];
 }
 
 #pragma mark -setter or getter

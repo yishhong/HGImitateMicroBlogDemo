@@ -25,6 +25,9 @@
 		182E6BD61D1E0D650028C4E6 /* TableViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E6BD51D1E0D650028C4E6 /* TableViewAnimationViewController.m */; };
 		182E6BDD1D1E151C0028C4E6 /* AnimationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E6BDB1D1E151C0028C4E6 /* AnimationTableViewCell.m */; };
 		182E6BDE1D1E151C0028C4E6 /* AnimationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182E6BDC1D1E151C0028C4E6 /* AnimationTableViewCell.xib */; };
+		182E6BE11D1E707D0028C4E6 /* CAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E6BE01D1E707D0028C4E6 /* CAEmitterLayerViewController.m */; };
+		182E6BE31D1E82470028C4E6 /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 182E6BE21D1E82460028C4E6 /* DazFlake.png */; };
+		182E6BE51D1E83B10028C4E6 /* DazStarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */; };
 		18C27C851D1D15DF00EEE521 /* HGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C27C841D1D15DF00EEE521 /* HGSearchViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,10 @@
 		182E6BDA1D1E151C0028C4E6 /* AnimationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTableViewCell.h; sourceTree = "<group>"; };
 		182E6BDB1D1E151C0028C4E6 /* AnimationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTableViewCell.m; sourceTree = "<group>"; };
 		182E6BDC1D1E151C0028C4E6 /* AnimationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationTableViewCell.xib; sourceTree = "<group>"; };
+		182E6BDF1D1E707D0028C4E6 /* CAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerViewController.h; sourceTree = "<group>"; };
+		182E6BE01D1E707D0028C4E6 /* CAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerViewController.m; sourceTree = "<group>"; };
+		182E6BE21D1E82460028C4E6 /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
+		182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DazStarIcon@2x.png"; sourceTree = "<group>"; };
 		18C27C831D1D15DF00EEE521 /* HGSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSearchViewController.h; sourceTree = "<group>"; };
 		18C27C841D1D15DF00EEE521 /* HGSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +146,8 @@
 				1806AE141D1A7C6100B264B4 /* ViewController.m */,
 				18C27C831D1D15DF00EEE521 /* HGSearchViewController.h */,
 				18C27C841D1D15DF00EEE521 /* HGSearchViewController.m */,
+				182E6BDF1D1E707D0028C4E6 /* CAEmitterLayerViewController.h */,
+				182E6BE01D1E707D0028C4E6 /* CAEmitterLayerViewController.m */,
 				182E6BD41D1E0D650028C4E6 /* TableViewAnimationViewController.h */,
 				182E6BD51D1E0D650028C4E6 /* TableViewAnimationViewController.m */,
 				182E6BDA1D1E151C0028C4E6 /* AnimationTableViewCell.h */,
@@ -148,6 +157,8 @@
 				1806AE411D1A851B00B264B4 /* TopSlideView.m */,
 				1806AE4C1D1B7DDE00B264B4 /* 12.png */,
 				1806AE161D1A7C6200B264B4 /* Main.storyboard */,
+				182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */,
+				182E6BE21D1E82460028C4E6 /* DazFlake.png */,
 				1806AE4E1D1B8C4A00B264B4 /* icon_cuciao-1.png */,
 				1806AE501D1B8CCE00B264B4 /* icon_daohuotongzhi-1.png */,
 				1806AE521D1B8D3800B264B4 /* icon_xitangxiaoxi-1.png */,
@@ -291,8 +302,10 @@
 				1806AE4F1D1B8C4A00B264B4 /* icon_cuciao-1.png in Resources */,
 				1806AE4D1D1B7DDF00B264B4 /* 12.png in Resources */,
 				1806AE511D1B8CCE00B264B4 /* icon_daohuotongzhi-1.png in Resources */,
+				182E6BE51D1E83B10028C4E6 /* DazStarIcon@2x.png in Resources */,
 				1806AE531D1B8D3900B264B4 /* icon_xitangxiaoxi-1.png in Resources */,
 				1806AE1D1D1A7C6200B264B4 /* LaunchScreen.storyboard in Resources */,
+				182E6BE31D1E82470028C4E6 /* DazFlake.png in Resources */,
 				1806AE1A1D1A7C6200B264B4 /* Assets.xcassets in Resources */,
 				182E6BDE1D1E151C0028C4E6 /* AnimationTableViewCell.xib in Resources */,
 				1806AE181D1A7C6200B264B4 /* Main.storyboard in Resources */,
@@ -327,6 +340,7 @@
 				182E6BDD1D1E151C0028C4E6 /* AnimationTableViewCell.m in Sources */,
 				1806AE421D1A851B00B264B4 /* TopSlideView.m in Sources */,
 				1806AE151D1A7C6100B264B4 /* ViewController.m in Sources */,
+				182E6BE11D1E707D0028C4E6 /* CAEmitterLayerViewController.m in Sources */,
 				1806AE121D1A7C6100B264B4 /* AppDelegate.m in Sources */,
 				1806AE0F1D1A7C6100B264B4 /* main.m in Sources */,
 			);

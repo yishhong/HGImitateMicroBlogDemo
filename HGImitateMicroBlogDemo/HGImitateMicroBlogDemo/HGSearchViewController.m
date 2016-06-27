@@ -34,7 +34,7 @@
 
 #pragma mark - methods response
 -(void)didDisappearTapped{
-
+   
 }
 
 -(void)didPopTapped{
