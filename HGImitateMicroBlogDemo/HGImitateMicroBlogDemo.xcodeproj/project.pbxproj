@@ -32,6 +32,8 @@
 		189E57AE1D210C0200FAF224 /* AnimationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189E57A71D210C0200FAF224 /* AnimationTableViewCell.xib */; };
 		189E57B11D210CF600FAF224 /* TopSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57B01D210CF600FAF224 /* TopSlideView.m */; };
 		189E57B41D210D3A00FAF224 /* HGCollectionViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E57B31D210D3A00FAF224 /* HGCollectionViewAnimationController.m */; };
+		18A1CBCD1D225172007D7AB4 /* DazFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A1CBCB1D225172007D7AB4 /* DazFire.png */; };
+		18A1CBCE1D225172007D7AB4 /* DazSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A1CBCC1D225172007D7AB4 /* DazSmoke.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		189E57B01D210CF600FAF224 /* TopSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSlideView.m; sourceTree = "<group>"; };
 		189E57B21D210D3A00FAF224 /* HGCollectionViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCollectionViewAnimationController.h; sourceTree = "<group>"; };
 		189E57B31D210D3A00FAF224 /* HGCollectionViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCollectionViewAnimationController.m; sourceTree = "<group>"; };
+		18A1CBCB1D225172007D7AB4 /* DazFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFire.png; sourceTree = "<group>"; };
+		18A1CBCC1D225172007D7AB4 /* DazSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazSmoke.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				189E57981D21097A00FAF224 /* HGCostom.h */,
 				1806AE4C1D1B7DDE00B264B4 /* 12.png */,
 				1806AE161D1A7C6200B264B4 /* Main.storyboard */,
+				18A1CBCB1D225172007D7AB4 /* DazFire.png */,
+				18A1CBCC1D225172007D7AB4 /* DazSmoke.png */,
 				182E6BE41D1E83B10028C4E6 /* DazStarIcon@2x.png */,
 				182E6BE21D1E82460028C4E6 /* DazFlake.png */,
 				1806AE4E1D1B8C4A00B264B4 /* icon_cuciao-1.png */,
@@ -333,6 +339,7 @@
 				1806AE4F1D1B8C4A00B264B4 /* icon_cuciao-1.png in Resources */,
 				1806AE4D1D1B7DDF00B264B4 /* 12.png in Resources */,
 				189BC9D11D2119620031E3B0 /* HGCollectionViewAnimationCell.xib in Resources */,
+				18A1CBCD1D225172007D7AB4 /* DazFire.png in Resources */,
 				1806AE511D1B8CCE00B264B4 /* icon_daohuotongzhi-1.png in Resources */,
 				182E6BE51D1E83B10028C4E6 /* DazStarIcon@2x.png in Resources */,
 				189E57AE1D210C0200FAF224 /* AnimationTableViewCell.xib in Resources */,
@@ -340,6 +347,7 @@
 				1806AE1D1D1A7C6200B264B4 /* LaunchScreen.storyboard in Resources */,
 				182E6BE31D1E82470028C4E6 /* DazFlake.png in Resources */,
 				1806AE1A1D1A7C6200B264B4 /* Assets.xcassets in Resources */,
+				18A1CBCE1D225172007D7AB4 /* DazSmoke.png in Resources */,
 				1806AE181D1A7C6200B264B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

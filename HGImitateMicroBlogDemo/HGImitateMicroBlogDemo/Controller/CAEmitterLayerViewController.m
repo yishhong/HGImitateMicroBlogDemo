@@ -12,62 +12,134 @@
 
 @property(strong,nonatomic)CAEmitterLayer * emitterLayer;
 
+@property(strong,nonatomic)CAEmitterLayer * fireEmitterLayer;
+
 @end
 
 @implementation CAEmitterLayerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor greenColor];
+    self.view.backgroundColor =[UIColor blackColor];
+    [self snowLoad];
+    [self fireLoad];
+}
+
+-(void)snowLoad{
+
     self.emitterLayer =[CAEmitterLayer layer];
     self.emitterLayer.frame =self.view.bounds;
-    self.emitterLayer.emitterPosition =CGPointMake(self.view.bounds.size.width/2, 0);
-    self.emitterLayer.emitterSize =CGSizeMake(self.view.bounds.size.width/2, 0);
-    self.emitterLayer.emitterMode =kCAEmitterLayerOutline;
-    self.emitterLayer.emitterShape =kCAEmitterLayerLine;
+    self.emitterLayer.emitterPosition =CGPointMake(self.view.bounds.size.width/2, 100);
+    self.emitterLayer.emitterSize =CGSizeMake(self.view.bounds.size.width/2, 100);
+    self.emitterLayer.emitterMode =kCAEmitterLayerPoint;
+    self.emitterLayer.emitterShape =kCAEmitterLayerPoints;
     self.emitterLayer.renderMode =kCAEmitterLayerOldestFirst;
     
     CAEmitterCell* emitterCell = [CAEmitterCell emitterCell];
     emitterCell.name =@"snow";//粒子名字
-    emitterCell.birthRate =1.0;//粒子参数的速度乘因子
-    emitterCell.lifetime =120.0;
+    emitterCell.birthRate =100;//粒子参数的速度乘因子
+    emitterCell.lifetime =3.0;
     emitterCell.velocity =50.f;//粒子速度
-    emitterCell.velocityRange =50;//粒子的速度范围
-    emitterCell.yAcceleration =4;//粒子y方向的分量
-    emitterCell.emissionRange =0.5*M_PI;//周围发射角度
-    emitterCell.spinRange =0.25 *M_PI;//粒子旋转角度
+    emitterCell.velocityRange =25;//粒子的速度范围
+    emitterCell.zAcceleration =4;//粒子y方向的分量
+    emitterCell.emissionRange =2*M_PI;//周围发射角度
+    emitterCell.spinRange =M_PI;//粒子旋转角度
     emitterCell.contents =(__bridge id _Nullable)([(id)[UIImage imageNamed:@"DazFlake"]CGImage]);
-//    emitterCell.color = [[UIColor colorWithRed:0.200 green:0.258 blue:0.543 alpha:1.000] CGColor];//粒子雪花形状的粒子的颜色
     
-    //创建星星形状的粒子
-    CAEmitterCell *snowflake1 = [CAEmitterCell emitterCell];
-    //粒子的名字
-    snowflake1.name = @"snow";
-    //粒子参数的速度乘数因子
-    snowflake1.birthRate = 1.0;
-    snowflake1.lifetime = 120.0;
-    //粒子速度
-    snowflake1.velocity =20.0;
-    //粒子的速度范围
-    snowflake1.velocityRange = 50;
-    //粒子y方向的加速度分量
-    snowflake1.yAcceleration = 4;
-    //周围发射角度
-    snowflake1.emissionRange =2*M_PI;
-    //子旋转角度范围
-    snowflake1.spinRange = 0.25 * M_PI;
-    //粒子的内容和内容的颜色
-    snowflake1.contents = (id)[[UIImage imageNamed:@"DazStarIcon"] CGImage];
-//    snowflake1.color = [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
-    
-    self.emitterLayer.shadowOpacity = 1.0;
+    self.emitterLayer.shadowOpacity =20;
     self.emitterLayer.shadowRadius = 0.0;
     self.emitterLayer.shadowOffset = CGSizeMake(0.0, 1.0);
     //粒子边缘的颜色
     self.emitterLayer.shadowColor = [[UIColor redColor] CGColor];
     
-    self.emitterLayer.emitterCells =@[emitterCell,snowflake1];
+    self.emitterLayer.emitterCells =@[emitterCell];
     [self.view.layer addSublayer:self.emitterLayer];
+}
+
+-(void)fireLoad{
+
+    self.view.backgroundColor=[UIColor blackColor];
+    
+    //设置发射器
+    
+    self.fireEmitterLayer=[[CAEmitterLayer alloc]init];
+    
+    self.fireEmitterLayer.emitterPosition=CGPointMake(self.view.frame.size.width/2,self.view.frame.size.height-20);
+    
+    self.fireEmitterLayer.emitterSize=CGSizeMake(self.view.frame.size.width-100, 20);
+    
+    self.fireEmitterLayer.renderMode = kCAEmitterLayerAdditive;
+    
+    //发射单元
+    
+    //火焰
+    
+    CAEmitterCell * fire = [CAEmitterCell emitterCell];
+    
+    fire.birthRate=800;
+    
+    fire.lifetime=2.0;
+    
+    fire.lifetimeRange=1.5;
+    
+    fire.color=[[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1]CGColor];
+    
+    fire.contents=(id)[[UIImage imageNamed:@"DazFire"]CGImage];
+    
+    [fire setName:@"fire"];
+    
+    
+    
+    fire.velocity=80;
+    
+    fire.velocityRange=40;
+    
+    fire.emissionLongitude=-M_PI_2;
+    
+    fire.emissionRange=M_PI_4;
+    
+    
+    
+    
+    fire.scaleSpeed=0.3;
+    
+    fire.spin=((M_PI/180)*360)/2;
+    
+    
+    
+    //烟雾
+    
+    CAEmitterCell * smoke = [CAEmitterCell emitterCell];
+    
+    smoke.birthRate=400;
+    
+    smoke.lifetime=3.0;
+    
+    smoke.lifetimeRange=1.5;
+    
+    smoke.color=[[UIColor colorWithRed:1 green:1 blue:1 alpha:0.05]CGColor];
+    
+    smoke.contents=(id)[[UIImage imageNamed:@"DazFire"]CGImage];
+    
+    [smoke setName:@"smoke"];
+    
+    
+    
+    smoke.velocity=125;
+    
+    smoke.velocityRange=50;
+    
+    smoke.emissionLongitude=-M_PI_2;
+    
+    smoke.emissionRange=M_PI_4;
+    
+    
+    
+    self.fireEmitterLayer.emitterCells=[NSArray arrayWithObjects:smoke,fire,nil];
+    
+    [self.view.layer addSublayer:self.fireEmitterLayer];
+
+    
 }
 
 @end
