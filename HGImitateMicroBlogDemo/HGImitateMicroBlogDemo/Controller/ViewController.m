@@ -17,6 +17,8 @@
 
 @property(strong,nonatomic)UIImageView * imageView;
 
+@property(strong,nonatomic)CAEmitterLayer * emitterLayer;
+
 @end
 
 @implementation ViewController
@@ -33,6 +35,47 @@
 //        [window addSubview:self.groundView];
 //        [self.groundView showOrHidenAnimation:YES];
 //    }
+    [self scatteredLoad];
+}
+
+-(void)scatteredLoad{
+
+    self.emitterLayer =[CAEmitterLayer layer];
+    self.emitterLayer.emitterPosition =CGPointMake(self.imageView.frame.size.width/2, 64);
+    self.emitterLayer.emitterSize =CGSizeMake(self.imageView.frame.size.width/2, 100);
+    self.emitterLayer.emitterMode =kCAEmitterLayerOutline;
+    
+    CAEmitterCell * scatteredCell =[CAEmitterCell emitterCell];
+    scatteredCell.name =@"scattered";
+    scatteredCell.birthRate =1000;
+    scatteredCell.lifetime =5.0f;
+    scatteredCell.lifetimeRange =1.5f;
+    scatteredCell.emissionLongitude =M_PI_4/2;
+    scatteredCell.emissionRange =M_PI_4*1.5;
+    scatteredCell.xAcceleration =-5;
+    scatteredCell.velocity =50;
+    scatteredCell.velocityRange =40;
+    scatteredCell.scale =0.05;
+    scatteredCell.contents =(id)[UIImage imageNamed:@"DazFire"].CGImage;
+    scatteredCell.color=[[UIColor colorWithRed:0.5 green:1 blue:0 alpha:1]CGColor];
+    
+    CAEmitterCell * addScatteredCell =[CAEmitterCell emitterCell];
+    addScatteredCell.name =@"addScattered";
+    addScatteredCell.birthRate =100;
+    addScatteredCell.lifetime =8.0f;
+    addScatteredCell.lifetimeRange =1.5f;
+    addScatteredCell.emissionLongitude =0;
+    addScatteredCell.emissionRange =M_PI_2;
+    addScatteredCell.beginTime =4.5f;
+    addScatteredCell.velocity =80;
+    addScatteredCell.velocityRange =40;
+    addScatteredCell.contents =(id)[UIImage imageNamed:@"DazFire"].CGImage;
+    addScatteredCell.color=[[UIColor colorWithRed:0.5 green:1 blue:0 alpha:1]CGColor];
+    addScatteredCell.scale =0.5;
+
+    scatteredCell.emitterCells =@[addScatteredCell];
+    self.emitterLayer.emitterCells=@[scatteredCell];
+    [self.imageView.layer addSublayer:self.emitterLayer];
 }
 
 -(void)didTappedTap{

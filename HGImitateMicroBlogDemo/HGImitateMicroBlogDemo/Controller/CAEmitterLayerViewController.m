@@ -37,8 +37,8 @@
     
     CAEmitterCell* emitterCell = [CAEmitterCell emitterCell];
     emitterCell.name =@"snow";//粒子名字
-    emitterCell.birthRate =100;//粒子参数的速度乘因子
-    emitterCell.lifetime =3.0;
+    emitterCell.birthRate =100;//表示粒子每秒产生的数量
+    emitterCell.lifetime =3.0;//生命周期(周期越大速度越慢)
     emitterCell.velocity =50.f;//粒子速度
     emitterCell.velocityRange =25;//粒子的速度范围
     emitterCell.zAcceleration =4;//粒子y方向的分量
@@ -80,7 +80,7 @@
     
     fire.lifetime=2.0;
     
-    fire.lifetimeRange=1.5;
+    fire.lifetimeRange=1.5;//粒子参数的速度乘因子
     
     fire.color=[[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1]CGColor];
     
@@ -90,20 +90,20 @@
     
     
     
-    fire.velocity=80;
+    fire.velocity=80;//粒子的运动速度
     
-    fire.velocityRange=40;
+    fire.velocityRange=40;//粒子速度容差
     
-    fire.emissionLongitude=-M_PI_2;
+    fire.emissionLongitude=-M_PI_2;//决定粒子的飞行方向和水平坐标轴x的夹角
     
-    fire.emissionRange=M_PI_4;
-    
-    
+    fire.emissionRange=M_PI_4;//决定粒子发散范围
     
     
-    fire.scaleSpeed=0.3;
     
-    fire.spin=((M_PI/180)*360)/2;
+    
+    fire.scaleSpeed=0.3;//缩放速度
+    
+    fire.spin=((M_PI/180)*360)/2;//旋转度
     
     
     
@@ -115,7 +115,7 @@
     
     smoke.lifetime=3.0;
     
-    smoke.lifetimeRange=1.5;
+    smoke.lifetimeRange=1.5;//生命周期容差
     
     smoke.color=[[UIColor colorWithRed:1 green:1 blue:1 alpha:0.05]CGColor];
     
